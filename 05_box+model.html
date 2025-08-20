@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+  </head>
+  <style>
+    .demo {
+      background: white;
+      /* 외곽선 두께 모양, 색상 */
+      border: 5px solid salmon;
+      /* margin 위, 오른쪽, 아래, 왼쪽 순서 */
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    .box {
+      /* block 한 줄을 모두 가지는 객체에만 box를 줄 수 있음 */
+      width: 200px;
+      height: 100px;
+      background-color: lightskyblue;
+      border: 2px solid mediumaquamarine;
+      padding: 20px;
+      margin: 20px;
+    }
+  </style>
+  <body>
+    <div class="demo">
+      <h2>기본 박스 모델</h2>
+      <div class="box">컨텐츠</div>
+      <ul>
+        <li>content</li>
+        <li>padding</li>
+        <li>border</li>
+        <li>margin</li>
+      </ul>
+    </div>
+  </body>
+</html>
