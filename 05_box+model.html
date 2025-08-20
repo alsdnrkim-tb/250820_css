@@ -23,6 +23,59 @@
       padding: 20px;
       margin: 20px;
     }
+
+    .collapse p {
+      background: lightgreen;
+    }
+
+    .demo > div {
+      width: 200px;
+      padding: 20px;
+    }
+    .content-box {
+      box-sizing: content-box;
+      border: 5px solid violet;
+      margin-bottom: 10px;
+      background-color: palegoldenrod;
+    }
+
+    .border-box {
+      box-sizing: border-box;
+      border: 5px solid coral;
+      margin-top: 10px;
+      background-color: paleturquoise;
+    }
+
+    .radius-box {
+      width: 120px;
+      height: 120px;
+      background-color: powderblue;
+      border: 4px solid RGB(128, 0, 32);
+      text-align: center;
+    }
+
+    .r10 {
+      border-radius: 15px;
+    }
+
+    .r50 {
+      border-radius: 25%;
+    }
+
+    .overflow-box {
+      width: 150px;
+      height: 150px;
+      border: 2px solid black;
+      padding: 5px;
+      background-color: gray;
+      font-size: 15px;
+      margin-right: 20px;
+    }
+
+    .ov-visible {
+        overflow: auto;
+
+    }
   </style>
   <body>
     <div class="demo">
@@ -35,5 +88,32 @@
         <li>margin</li>
       </ul>
     </div>
+
+    <div class="demo collapse">
+      <h2>마진 충돌</h2>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>상쇄확인</p>
+    </div>
+
+    <div class="demo">
+      <h2>box-sizing</h2>
+      <div class="content-box">content</div>
+      <div class="border-box">border</div>
+    </div>
+
+    <div class="demo">
+      <h2>border-radius</h2>
+      <div class="radius-box r10">10px</div>
+      <div class="radius-box r50">50px</div>
+    </div>
+
+    <div class="demo">
+      <h2>overflow</h2>
+      <div class="overflow-box ov-visible">
+      <div>visible <br />넘쳐도 보이는 상태<br />        
+    </div>
+    
   </body>
 </html>
