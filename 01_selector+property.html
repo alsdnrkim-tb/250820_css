@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 선택자, Property(속성)</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="brand">구별을 위한 선택자 id. 1개만 존재하는것을 '권장'함</h1>
+    <p id="brand">난 내길을 간다</p>
+    <p class="lead"><strong>재사용을 위한 클래스 예제</strong></p>
+    <strong class="lead">this love</strong>
+    <label>
+      <input type="text" placeholder="아이디" />
+    </label>
+    <label>
+      <input type="password" placeholder="비밀번호" />
+    </label>
+    <p>
+      <!-- _blank : 새 창 띄우기 -->
+      <a href="https://naver.com" target="_blank">네이버 새 창 링크</a>
+      <a href="https://naver.com" target="_self">네이버 현재 탭(창) 바꾸기</a>
+    </p>
+    <!-- 감싸줄 때 쓴다 -->
+    <section class="section">
+      <div class="note">나는 .section의 자식(하위, 바로 직계인 경우) .note</div>
+      <div>
+        <div class="note">
+          나는 .section의 자손(바로 직계가 아닌 경우) .note
+        </div>
+      </div>
+      <h3>제목</h3>
+      <p>이 단락은 h3 바로 다음</p>
+      <p>이 단락은 h3 뒤쪽 모든 형제(~, 같은 요소 소속인 요소들)</p>
+    </section>
+  </body>
+</html>

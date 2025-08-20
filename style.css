@@ -1,0 +1,28 @@
+#brand {
+  color: RGB(128, 0, 32);
+}
+.lead {
+  color: RGB(15, 82, 186);
+}
+strong {
+  color: RGB(255, 204, 51);
+}
+input {
+  font-size: 24px;
+}
+input {
+  font-size: 48px; /* 같은 우선도면 뒤에 나오는게 덮어씀 */
+}
+input[type="password"] {
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+}
+a[href="https://naver.com"]
+{
+  text-decoration: line-through;
+}
+a[target="_blank"] {
+  text-decoration: underline;
+}
